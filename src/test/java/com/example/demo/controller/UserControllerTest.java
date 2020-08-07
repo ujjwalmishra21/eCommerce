@@ -6,12 +6,14 @@ import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
 import com.example.demo.model.requests.CreateUserRequest;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Assert;
 import static org.hamcrest.Matchers.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
+import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.json.AutoConfigureJsonTesters;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -24,6 +26,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
 import java.net.URI;
 
@@ -101,6 +105,8 @@ public class UserControllerTest {
     @MockBean
     private BCryptPasswordEncoder encoder;
 
+    private  CreateUserRequest r;
+
     @Before
     public void setup(){
 //        User user = new User();
@@ -108,16 +114,28 @@ public class UserControllerTest {
 //
 //        BDDMockito.given(userRepository.save(any())).willReturn(user);
 
+        r = new CreateUserRequest();
+        r.setUsername("ujjwal2102");
+        r.setPassword("ujjwal21");
+        r.setConfirmPassword("ujjwal21");
+
 
     }
 
     @Test
-    public void createUser() throws Exception{
-        when(encoder.encode("ujjwal21")).thenReturn("thisIsHashed");
-        CreateUserRequest r = new CreateUserRequest();
-        r.setUsername("ujjwal2102");
-        r.setPassword("ujjwal21");
-        r.setConfirmPassword("ujjwal21");
+    public void createUserTest() throws Exception{
+        signup();
+    }
+
+    @Test
+    public void loginUserTest() throws Exception{
+        signup();
+        login();
+    }
+
+    public void signup() throws Exception{
+        when(encoder.encode("ujjwal21")).thenReturn("ujjwal21");
+
         mvc.perform(
                 MockMvcRequestBuilders.post(new URI("/api/user/create"))
                         .content(jsonN.write(r).getJson())
@@ -126,22 +144,18 @@ public class UserControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id",is(0)))
                 .andExpect(jsonPath("$.username",is("ujjwal2102")));
-        login();
     }
-
-
     public void login() throws Exception{
-        User user = new User();
-        user.setUsername("ujjwal2102");
-        user.setPassword("ujjwal21");
+        r.setConfirmPassword(null);
         mvc.perform(
                 MockMvcRequestBuilders.post(new URI("/login"))
-                        .content(json.write(user).getJson())
+                        .content(jsonN.write(r).getJson())
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .accept(MediaType.APPLICATION_JSON_UTF8))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id",is(0)))
-                .andExpect(jsonPath("$.username",is("ujjwal2102")));
+                .andExpect(status().isOk());
+
 
     }
+
+
 }

@@ -1,6 +1,8 @@
 package com.example.demo.model.requests;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 
 public class CreateUserRequest {
 
@@ -11,6 +13,7 @@ public class CreateUserRequest {
 	private String password;
 
 	@JsonProperty
+	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String confirmPassword;
 
 
