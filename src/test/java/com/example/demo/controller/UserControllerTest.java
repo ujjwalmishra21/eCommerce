@@ -147,13 +147,13 @@ public class UserControllerTest {
     }
     public void login() throws Exception{
         r.setConfirmPassword(null);
+        when(encoder.encode("ujjwal21")).thenReturn("ujjwal21");
         mvc.perform(
                 MockMvcRequestBuilders.post(new URI("/login"))
                         .content(jsonN.write(r).getJson())
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .accept(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk());
-
 
     }
 
