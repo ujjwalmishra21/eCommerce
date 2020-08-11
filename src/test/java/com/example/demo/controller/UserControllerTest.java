@@ -60,6 +60,33 @@ public class UserControllerTest {
     }
 
     @Test
+    public void getUserByUsernameFail(){
+        User user = new User();
+        user.setId(1);
+        user.setUsername("ujjwal2102");
+        when(userRepository.findByUsername(user.getUsername())).thenReturn(user);
+
+        ResponseEntity<User> response = userController.findByUserName("ujjwal2101");
+        User userData = response.getBody();
+        Assert.assertEquals(404,response.getStatusCodeValue());
+
+
+    }
+
+    @Test
+    public void getUserByIdFail(){
+        User user = new User();
+        user.setId(1);
+        user.setUsername("ujjwal2102");
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+
+        ResponseEntity<User> response = userController.findById(0L);
+        User userData = response.getBody();
+        Assert.assertEquals(404,response.getStatusCodeValue());
+
+    }
+
+    @Test
     public void getUserByUsername(){
         User user = new User();
         user.setId(1);
