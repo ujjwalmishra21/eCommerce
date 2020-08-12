@@ -74,36 +74,6 @@ public class CartControllerTest {
         Assert.assertEquals(BigDecimal.valueOf(50000),cart.getTotal());
     }
 
-    @Test
-    public void addToCartFail(){
-        ModifyCartRequest mcr = new ModifyCartRequest();
-        mcr.setUsername("ujjwal2102");
-        mcr.setItemId(1);
-        mcr.setQuantity(1);
-
-        User user = new User();
-        user.setId(1);
-        user.setUsername("ujjwal2111");
-        Cart cartObj = new Cart();
-        user.setCart(cartObj);
-
-        Item item = new Item();
-        item.setId(1L);
-        item.setName("Play Station 5");
-        item.setDescription("Bundled");
-        item.setPrice(BigDecimal.valueOf(50000));
-
-
-        when(itemRepository.findById(item.getId())).thenReturn(Optional.of(item));
-        when(userRepository.findByUsername(user.getUsername())).thenReturn(user);
-
-        ResponseEntity<Cart> response = cartController.addTocart(mcr);
-
-        Cart cart = response.getBody();
-
-        Assert.assertEquals(404,response.getStatusCodeValue());
-
-    }
 
     @Test
     public void removeFromCart(){
