@@ -56,3 +56,67 @@
 2020-08-12 14:52:04.206 DEBUG 24728 --- [http-nio-8000-exec-6] c.e.d.security.JWTAuthenticationFilter   : Request is to process authentication
 2020-08-12 14:53:07.058  INFO 24728 --- [http-nio-8000-exec-10] c.e.demo.controller.CartController       : Cart saved successfully for user :: ujjwal2103
 2020-08-12 14:53:22.766  INFO 24728 --- [http-nio-8000-exec-1] c.e.demo.controller.OrderController      : Order successfully saved for user ujjwal2103
+2020-08-12 14:47:31.406  INFO 7896 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on MSI with PID 7896 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 14:47:31.573 DEBUG 7896 --- [main] com.example.demo.SareetaApplication      : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 14:47:31.575  INFO 7896 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-08-12 14:47:40.382  INFO 7896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-12 14:47:40.383  INFO 7896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-08-12 14:47:40.743  INFO 7896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-12 14:47:41.503  INFO 7896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-12 14:47:41.888  INFO 7896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-12 14:47:42.042  INFO 7896 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-12 14:47:42.860  INFO 7896 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-12 14:47:42.866  INFO 7896 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-12 14:47:43.792  INFO 7896 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-12 14:47:44.467  INFO 7896 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-12 14:47:56.724 ERROR 7896 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8000]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.SareetaApplication.main(SareetaApplication.java:22)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:479)
+	at java.base/sun.nio.ch.Net.bind(Net.java:468)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1202)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+
+2020-08-12 14:47:56.737  INFO 7896 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-12 14:47:56.767 ERROR 7896 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8000 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8000, or configure this application to listen on another port.
+
+2020-08-12 14:47:56.804  INFO 7896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-12 14:47:56.966  INFO 7896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
