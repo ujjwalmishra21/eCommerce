@@ -1,0 +1,49 @@
+2020-08-12 15:33:16.738  INFO 14564 --- [main] c.e.demo.controller.CartControllerTest   : Starting CartControllerTest on MSI with PID 14564 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 15:33:16.739 DEBUG 14564 --- [main] c.e.demo.controller.CartControllerTest   : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 15:33:16.739  INFO 14564 --- [main] c.e.demo.controller.CartControllerTest   : No active profile set, falling back to default profiles: default
+2020-08-12 15:33:18.357  INFO 14564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-12 15:33:18.496  INFO 14564 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-12 15:33:18.559  INFO 14564 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-12 15:33:18.624  INFO 14564 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-12 15:33:18.626  INFO 14564 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-12 15:33:18.663  INFO 14564 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-12 15:33:18.821  INFO 14564 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-12 15:33:20.940  INFO 14564 --- [main] c.e.demo.controller.CartControllerTest   : Started CartControllerTest in 4.485 seconds (JVM running for 6.234)
+2020-08-12 15:33:21.009  INFO 14564 --- [main] c.e.demo.controller.CartController       : Cart saved successfully for user :: ujjwal2102
+2020-08-12 15:33:21.077  INFO 14564 --- [main] c.e.demo.controller.CartController       : Item removed successfully for user::ujjwal2102
+2020-08-12 15:33:21.087  INFO 14564 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-12 15:33:21.089  INFO 14564 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-12 15:34:18.731  INFO 9848 --- [main] c.e.demo.controller.CartControllerTest   : Starting CartControllerTest on MSI with PID 9848 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 15:34:18.732 DEBUG 9848 --- [main] c.e.demo.controller.CartControllerTest   : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 15:34:18.735  INFO 9848 --- [main] c.e.demo.controller.CartControllerTest   : No active profile set, falling back to default profiles: default
+2020-08-12 15:34:20.255  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-12 15:34:20.420  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-12 15:34:20.498  INFO 9848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-12 15:34:20.576  INFO 9848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-12 15:34:20.579  INFO 9848 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-12 15:34:20.621  INFO 9848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-12 15:34:20.794  INFO 9848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-12 15:34:24.534  INFO 9848 --- [main] c.e.demo.controller.CartControllerTest   : Started CartControllerTest in 6.271 seconds (JVM running for 8.592)
+2020-08-12 15:34:24.584  INFO 9848 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-12 15:34:24.586  INFO 9848 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-12 15:35:40.352  INFO 1524 --- [main] c.e.demo.controller.CartControllerTest   : Starting CartControllerTest on MSI with PID 1524 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 15:35:40.352 DEBUG 1524 --- [main] c.e.demo.controller.CartControllerTest   : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 15:35:40.353  INFO 1524 --- [main] c.e.demo.controller.CartControllerTest   : No active profile set, falling back to default profiles: default
+2020-08-12 15:35:41.507  INFO 1524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-12 15:35:41.675  INFO 1524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-12 15:35:41.748  INFO 1524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-12 15:35:41.809  INFO 1524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-12 15:35:41.810  INFO 1524 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-12 15:35:41.851  INFO 1524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-12 15:35:42.000  INFO 1524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-12 15:35:44.165  INFO 1524 --- [main] c.e.demo.controller.CartControllerTest   : Started CartControllerTest in 4.094 seconds (JVM running for 5.425)
+2020-08-12 15:35:44.203  INFO 1524 --- [main] c.e.demo.controller.CartController       : Cart saved successfully for user :: ujjwal2102
+2020-08-12 15:35:44.214  INFO 1524 --- [main] c.e.demo.controller.CartController       : Item removed successfully for user::ujjwal2102
+2020-08-12 15:35:44.222  INFO 1524 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-12 15:35:44.224  INFO 1524 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
