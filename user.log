@@ -1,0 +1,58 @@
+2020-08-12 14:32:19.719  INFO 20472 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on MSI with PID 20472 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 14:32:19.731 DEBUG 20472 --- [main] com.example.demo.SareetaApplication      : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 14:32:19.735  INFO 20472 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-08-12 14:32:24.950  INFO 20472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-12 14:32:24.951  INFO 20472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-08-12 14:32:25.413  INFO 20472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-12 14:32:25.863  INFO 20472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-12 14:32:26.315  INFO 20472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-12 14:32:26.446  INFO 20472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-12 14:32:26.614  INFO 20472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-12 14:32:26.617  INFO 20472 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-12 14:32:27.038  INFO 20472 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-12 14:32:27.469  INFO 20472 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-12 14:32:32.391  INFO 20472 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 14.111 seconds (JVM running for 15.53)
+2020-08-12 14:32:37.220  INFO 20472 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-12 14:32:37.692  INFO 20472 --- [http-nio-8000-exec-1] c.e.demo.controller.UserController       : Username set with ujjwal2101
+2020-08-12 14:32:38.042  INFO 20472 --- [http-nio-8000-exec-1] c.e.demo.controller.UserController       : User successfully saved ::ujjwal2101
+2020-08-12 14:34:15.232 DEBUG 20472 --- [http-nio-8000-exec-5] c.e.d.security.JWTAuthenticationFilter   : Request is to process authentication
+2020-08-12 14:34:15.577  INFO 20472 --- [http-nio-8000-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-08-12 14:34:27.796  INFO 20472 --- [http-nio-8000-exec-6] c.e.demo.controller.CartController       : Cart saved successfully for user :: ujjwal2101
+2020-08-12 14:34:34.334  INFO 20472 --- [http-nio-8000-exec-7] c.e.demo.controller.UserController       : User successfully fetched on username::ujjwal2101
+2020-08-12 14:35:16.006  INFO 20472 --- [http-nio-8000-exec-2] c.e.demo.controller.OrderController      : Order successfully saved for user ujjwal2101
+2020-08-12 14:44:11.938  INFO 24728 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on MSI with PID 24728 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 14:44:11.948 DEBUG 24728 --- [main] com.example.demo.SareetaApplication      : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 14:44:11.951  INFO 24728 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-08-12 14:44:16.954  INFO 24728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-12 14:44:16.955  INFO 24728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-08-12 14:44:17.405  INFO 24728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-12 14:44:18.103  INFO 24728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-12 14:44:18.780  INFO 24728 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-12 14:44:19.032  INFO 24728 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-12 14:44:19.265  INFO 24728 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-12 14:44:19.269  INFO 24728 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-12 14:44:19.690  INFO 24728 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-12 14:44:20.144  INFO 24728 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-12 14:44:25.861  INFO 24728 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 15.658 seconds (JVM running for 16.952)
+2020-08-12 14:44:26.060  INFO 24728 --- [http-nio-8000-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-12 14:44:58.356  INFO 24728 --- [http-nio-8000-exec-1] c.e.demo.controller.UserController       : Username set with ujjwal2101
+2020-08-12 14:44:58.697  INFO 24728 --- [http-nio-8000-exec-1] c.e.demo.controller.UserController       : User successfully saved ::ujjwal2101
+2020-08-12 14:45:06.033  INFO 24728 --- [http-nio-8000-exec-5] c.e.demo.controller.UserController       : Username set with ujjwal2102
+2020-08-12 14:45:06.336  INFO 24728 --- [http-nio-8000-exec-5] c.e.demo.controller.UserController       : User successfully saved ::ujjwal2102
+2020-08-12 14:45:14.146  INFO 24728 --- [http-nio-8000-exec-9] c.e.demo.controller.UserController       : Username set with ujjwal2103
+2020-08-12 14:45:14.431  INFO 24728 --- [http-nio-8000-exec-9] c.e.demo.controller.UserController       : User successfully saved ::ujjwal2103
+2020-08-12 14:45:20.483 DEBUG 24728 --- [http-nio-8000-exec-8] c.e.d.security.JWTAuthenticationFilter   : Request is to process authentication
+2020-08-12 14:45:21.906  INFO 24728 --- [http-nio-8000-exec-8] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-08-12 14:45:45.561  INFO 24728 --- [http-nio-8000-exec-4] c.e.demo.controller.CartController       : Cart saved successfully for user :: ujjwal2101
+2020-08-12 14:45:53.467  INFO 24728 --- [http-nio-8000-exec-2] c.e.demo.controller.CartController       : Cart saved successfully for user :: ujjwal2101
+2020-08-12 14:46:07.789  INFO 24728 --- [http-nio-8000-exec-10] c.e.demo.controller.OrderController      : Order successfully saved for user ujjwal2101
+2020-08-12 14:50:53.909 DEBUG 24728 --- [http-nio-8000-exec-8] c.e.d.security.JWTAuthenticationFilter   : Request is to process authentication
+2020-08-12 14:51:27.676  INFO 24728 --- [http-nio-8000-exec-3] c.e.demo.controller.CartController       : Cart saved successfully for user :: ujjwal2102
+2020-08-12 14:51:46.564  INFO 24728 --- [http-nio-8000-exec-7] c.e.demo.controller.OrderController      : Order successfully saved for user ujjwal2102
+2020-08-12 14:52:04.206 DEBUG 24728 --- [http-nio-8000-exec-6] c.e.d.security.JWTAuthenticationFilter   : Request is to process authentication
+2020-08-12 14:53:07.058  INFO 24728 --- [http-nio-8000-exec-10] c.e.demo.controller.CartController       : Cart saved successfully for user :: ujjwal2103
+2020-08-12 14:53:22.766  INFO 24728 --- [http-nio-8000-exec-1] c.e.demo.controller.OrderController      : Order successfully saved for user ujjwal2103
