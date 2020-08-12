@@ -120,3 +120,19 @@ Verify the connector's configuration, identify and stop any process that's liste
 
 2020-08-12 14:47:56.804  INFO 7896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-08-12 14:47:56.966  INFO 7896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-12 15:26:51.939  INFO 11124 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on MSI with PID 11124 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 15:26:51.941 DEBUG 11124 --- [main] com.example.demo.SareetaApplication      : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 15:26:51.942  INFO 11124 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-08-12 15:26:53.428  INFO 11124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-12 15:26:53.429  INFO 11124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-08-12 15:26:53.555  INFO 11124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-12 15:26:53.710  INFO 11124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-12 15:26:53.865  INFO 11124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-12 15:26:53.913  INFO 11124 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-12 15:26:53.986  INFO 11124 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-12 15:26:53.988  INFO 11124 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-12 15:26:54.162  INFO 11124 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-12 15:26:54.340  INFO 11124 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-12 15:26:55.822  INFO 11124 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 4.292 seconds (JVM running for 4.678)
