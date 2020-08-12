@@ -47,3 +47,101 @@
 2020-08-12 15:35:44.214  INFO 1524 --- [main] c.e.demo.controller.CartController       : Item removed successfully for user::ujjwal2102
 2020-08-12 15:35:44.222  INFO 1524 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-08-12 15:35:44.224  INFO 1524 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-12 15:50:00.846  INFO 12440 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on MSI with PID 12440 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 15:50:00.848 DEBUG 12440 --- [main] com.example.demo.SareetaApplication      : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 15:50:00.849  INFO 12440 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-08-12 15:50:01.280 ERROR 12440 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code\target\classes\com\example\demo\SareetaApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code\target\classes\com\example\demo\SareetaApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 58
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:454)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:316)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:275)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.SareetaApplication.main(SareetaApplication.java:22)
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code\target\classes\com\example\demo\SareetaApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 58
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:57)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 58
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:184)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:152)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:273)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	... 23 common frames omitted
+
+2020-08-12 15:52:20.513  INFO 7232 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on MSI with PID 7232 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 15:52:20.516 DEBUG 7232 --- [main] com.example.demo.SareetaApplication      : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 15:52:20.517  INFO 7232 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-08-12 15:52:20.896 ERROR 7232 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code\target\classes\com\example\demo\SareetaApplication.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code\target\classes\com\example\demo\SareetaApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 58
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:454)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:316)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:275)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.SareetaApplication.main(SareetaApplication.java:22)
+Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code\target\classes\com\example\demo\SareetaApplication.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 58
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:57)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123)
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 58
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:184)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:152)
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:273)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:54)
+	... 23 common frames omitted
+
+2020-08-12 15:54:07.909  INFO 12192 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on MSI with PID 12192 (started by ujjwal in F:\Spring Udacity\Projects\eCommerce\P04-eCommerce Application\starter_code)
+2020-08-12 15:54:07.911 DEBUG 12192 --- [main] com.example.demo.SareetaApplication      : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-08-12 15:54:07.912  INFO 12192 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2020-08-12 15:54:09.522  INFO 12192 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-12 15:54:09.523  INFO 12192 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-08-12 15:54:09.682  INFO 12192 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-12 15:54:09.842  INFO 12192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-12 15:54:09.970  INFO 12192 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-12 15:54:10.014  INFO 12192 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-08-12 15:54:10.070  INFO 12192 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-08-12 15:54:10.071  INFO 12192 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-08-12 15:54:10.181  INFO 12192 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-08-12 15:54:10.293  INFO 12192 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-08-12 15:54:11.783  INFO 12192 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 4.273 seconds (JVM running for 4.644)
