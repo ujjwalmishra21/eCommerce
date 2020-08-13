@@ -10,7 +10,7 @@ public class TestUtils {
         try {
             Field f = target.getClass().getDeclaredField(fieldName);
 
-            if((f.getModifiers() & (Modifier.PROTECTED | Modifier.PRIVATE)) == 0.){
+            if(!(f.isAccessible())){
                 f.setAccessible(true);
                 wasPrivate = true;
             }
