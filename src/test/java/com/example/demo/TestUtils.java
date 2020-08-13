@@ -2,13 +2,15 @@ package com.example.demo;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 public class TestUtils {
     public static void injectObjects(Object target, String fieldName, Object toInject){
         boolean wasPrivate = false;
         try {
             Field f = target.getClass().getDeclaredField(fieldName);
-            if(!f.canAccess(target)){
+
+            if((f.getModifiers() & (Modifier.PROTECTED | Modifier.PRIVATE)) == 0.){
                 f.setAccessible(true);
                 wasPrivate = true;
             }
